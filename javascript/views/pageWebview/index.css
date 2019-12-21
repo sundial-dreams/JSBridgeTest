@@ -1,0 +1,92 @@
+
+html, body {
+    margin: 0;
+}
+
+button, input {
+    outline: none;
+    border: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#app {
+    width: 100vw;
+    height: 100vh;
+}
+
+.comment-wrapper {
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    background: white;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, .05);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.comment-wrapper input {
+    width: 70%;
+    height: 32px;
+    border: 1px solid silver;
+    border-radius: 20px;
+    padding-left: 10px;
+    color: #333333;
+}
+
+.comment-wrapper .comment-button {
+    width: 90px;
+    height: 32px;
+    background: blueviolet;
+    color: white;
+    border-radius: 5px;
+}
+
+.comment-list {
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    transition: .5s ease-in-out;
+}
+
+.comment-list .comment-item {
+    display: flex;
+    margin-top: 15px
+}
+
+.comment-list .comment-item .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: blueviolet;
+    flex-basis: 40px;
+    flex-shrink: 0;
+}
+
+.avatar.color-1 {
+    background: darksalmon !important;
+}
+
+.avatar.color-2 {
+    background: aquamarine !important;
+}
+
+.avatar.color-3 {
+    background: darkorange !important;
+}
+
+.avatar.color-4 {
+    background: cornflowerblue !important;
+}
+
+.comment-list .comment-item .comment-content {
+    padding: 10px;
+    color: #333333;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, .05);
+    margin-left: 10px;
+}
